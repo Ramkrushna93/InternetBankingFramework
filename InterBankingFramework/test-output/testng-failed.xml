@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [InterBankingframework]">
+  <listeners>
+    <listener class-name="com.qa.interbanking.utils.Reporting1"/>
+  </listeners>
+  <test thread-count="5" name="Banking Application Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.interbanking.testcases.TC_LoginTest_002">
+        <methods>
+          <include name="SetUP"/>
+          <include name="teardown"/>
+          <include name="loginTest2"/>
+        </methods>
+      </class> <!-- com.qa.interbanking.testcases.TC_LoginTest_002 -->
+    </classes>
+  </test> <!-- Banking Application Test(failed) -->
+</suite> <!-- Failed suite [InterBankingframework] -->

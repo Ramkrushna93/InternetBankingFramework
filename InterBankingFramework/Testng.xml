@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InterBankingframework">
+
+
+
+	<listeners>
+		<listener class-name="com.qa.interbanking.utils.Reporting1" />
+	</listeners>
+	
+	
+	<test name="Banking Application Test">
+
+		<parameter name="browser" value="chrome" />
+		<classes>
+		<class name="com.qa.interbanking.testcases.TestOnJenkins"/>
+		
+		  
+			
+		
+	
+		</classes>
+
+	</test>
+
+</suite>
